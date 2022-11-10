@@ -1,0 +1,677 @@
+:root {
+    --second-stage: 15;
+}
+svg {
+    width: 500px;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background: #202020;
+}
+.container * {
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.chair {
+    animation-timing-function: cubic-bezier(0.07, 0.19, 0, 2.6);
+    g {
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+}
+
+.chair1 {
+    transform: translate(330px, 89px);
+    animation-name: chair1_entrance;
+    g {        
+        transform: rotate(333deg);
+    }
+}
+
+.chair2 {
+    transform: translate(273px, 116px);
+    animation-name: chair2_entrance;
+    g {        
+        transform: rotate(283deg);
+    }
+}
+
+.chair3 {
+    transform: translate(374px, 172px);
+    animation-name: chair3_entrance;
+    g {        
+        transform: rotate(143deg);
+    }
+}
+
+.chair4 {
+    transform: translate(379px, 88px);
+    animation-name: chair4_entrance;
+    g {        
+        transform: rotate(40deg);
+    }
+}
+
+.chair5 {
+    transform: translate(298px, 176px);
+    animation-name: chair5_entrance;
+    g {        
+        transform: rotate(220deg);
+    }
+}
+
+.chair6 {
+    transform: translate(204px, 358px);
+    animation-name: chair6_entrance;
+}
+@keyframes chair6_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    10% {
+        transform: translate(204px, 378px);
+        opacity: 1;
+    }
+    12%, 100% {
+        transform: translate(204px, 358px);
+        opacity: 1;
+    }
+}
+.chair7 {
+    transform: translate(300px, 358px);
+    animation-name: chair7_entrance;
+}
+
+@keyframes chair7_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    11% {
+        transform: translate(300px, 378px);
+        opacity: 1;
+    }
+    13%, 100% {
+        transform: translate(300px, 358px);
+        opacity: 1;
+    }
+}
+.chair8 {
+    transform: translate(396px, 358px);
+    animation-name: chair8_entrance;
+}
+
+@keyframes chair8_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    12% {
+        transform: translate(396px, 378px);
+        opacity: 1;
+    }
+    14%, 100% {
+        transform: translate(396px, 358px);
+        opacity: 1;
+    }
+}
+.chair9 {
+    transform: translate(204px, 400px);
+    animation-name: chair9_entrance;
+    g {        
+        transform: rotate(180deg);
+    }
+}
+@keyframes chair9_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    10% {
+        transform: translate(204px, 378px);
+        opacity: 1;
+    }
+    12%, 100% {
+        transform: translate(204px, 400px);
+        opacity: 1;
+    }
+}
+
+.chair10 {
+    transform: translate(300px, 400px);
+    animation-name: chair10_entrance;
+    g {        
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes chair10_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    11% {
+        transform: translate(300px, 378px);
+        opacity: 1;
+    }
+    13%, 100% {
+        transform: translate(300px, 400px);
+        opacity: 1;
+    }
+}
+.chair11 {
+    transform: translate(396px, 400px);
+    animation-name: chair11_entrance;
+    g {        
+        transform: rotate(180deg);
+    }
+}
+@keyframes chair11_entrance {
+    0%, 9.9% {
+        opacity: 0;
+    }
+    12% {
+        transform: translate(396px, 378px);
+        opacity: 1;
+    }
+    14%, 100% {
+        transform: translate(396px, 400px);
+        opacity: 1;
+    }
+}
+
+@keyframes chair1_entrance {
+    0%, 7.9% {
+        opacity: 0;
+    }
+    9% {
+        transform: translate(330px, 89px);
+        opacity: 1;
+    }
+    11%, 100% {
+        transform: translate(310px, 69px);
+        opacity: 1;
+    }
+}
+@keyframes chair2_entrance {
+    0%, 7.9% {
+        opacity: 0;
+    }
+    9% {
+        transform: translate(293px, 122px);
+        opacity: 1;
+    }
+    11%, 100% {
+        transform: translate(273px, 116px);
+        opacity: 1;
+    }
+}
+@keyframes chair3_entrance {
+    0%, 7.9% {
+        opacity: 0;
+    }
+    9% {
+        transform: translate(354px, 152px);
+        opacity: 1;
+    }
+    11%, 100% {
+        transform: translate(374px, 172px);
+        opacity: 1;
+    }
+}
+@keyframes chair4_entrance {
+    0%, 7.9% {
+        opacity: 0;
+    }
+    9% {
+        transform: translate(359px, 108px);
+        opacity: 1;
+    }
+    11%, 100% {
+        transform: translate(379px, 88px);
+        opacity: 1;
+    }
+}
+@keyframes chair5_entrance {
+    0%, 7.9% {
+        opacity: 0;
+    }
+    9% {
+        transform: translate(318px, 156px);
+        opacity: 1;
+    }
+    11%, 100% {
+        transform: translate(298px, 176px);
+        opacity: 1;
+    }
+}
+
+.wall1_entrance_1 {
+    animation-name: wall1_entrance_1;
+    x: 42;
+    y: 52;
+    width: 16;
+    height: 81;
+}
+
+/*Wall 1*/
+@keyframes wall1_entrance_1 {
+    0% {
+        y: 52;
+        height: 81;
+    }
+    1%, 100% {
+        height: 0;
+    }
+}
+
+.wall1_entrance_2 {
+    animation-name: wall1_entrance_2;
+    x: 47;
+    y: 43;
+    width: 414;
+    height: 10;
+}
+
+@keyframes wall1_entrance_2 {
+    0%, 1% {
+        width: 414;
+        x: 47;
+    }
+    2%, 100% {
+        x: 461;
+        width: 0;
+    }
+}
+
+.wall1_entrance_3 {
+    animation-name: wall1_entrance_3;
+    x: 460;
+    y: 43;
+    height: 213;
+    width: 10;
+}
+
+@keyframes wall1_entrance_3 {
+    0%, 2% {
+        y: 43;
+        height: 213;
+    }
+    3%, 100% {
+        y: 256;
+        height: 0;
+    }
+}
+
+/*Wall 2*/
+.wall2_entrance_1 {
+    animation-name: wall2_entrance_1;
+    x: 459;
+    y: 304;
+    width: 10;
+    height: 155;
+}
+
+@keyframes wall2_entrance_1 {
+    0% {
+        x: 459;
+        y: 304;
+        width: 10;
+        height: 155;
+    }
+    1%, 100% {
+        y: 459;
+        height: 0;
+    }
+}
+
+.wall2_entrance_2 {
+    animation-name: wall2_entrance_2;
+    x: 53;
+    y: 458;
+    width: 414px;
+    height: 10;
+}
+
+@keyframes wall2_entrance_2 {
+    0%, 1% {
+        x: 53;
+        y: 458;
+        width: 414px;
+        height: 10;
+    }
+    2%, 100% {
+        width: 0;
+    }
+}
+
+.wall2_entrance_3 {
+    animation-name: wall2_entrance_3;
+    x: 44;
+    y: 191;
+    width: 10;
+    height: 275px;
+}
+
+@keyframes wall2_entrance_3 {
+    0%, 2% {
+        x: 44;
+        y: 191;
+        width: 10;
+        height: 275px;
+    }
+    3%, 100% {
+        height: 0;
+
+    }
+}
+
+.innerwall {
+    opacity: 0;
+    animation-name: inner_wall_entrance;
+}
+
+@keyframes inner_wall_entrance {
+    0%, 3% {
+        opacity: 0;
+    }
+    3.1%, 100% {
+        opacity: 1;
+    }
+}
+
+.inner_wall_entrance_1 {
+    animation-name: inner_wall_entrance_1;
+    x: 224;
+    y: 52;
+    width: 10;
+    height: 119px;
+}
+
+@keyframes inner_wall_entrance_1 {
+    0%, 4% {
+        x: 224;
+        y: 52;
+        width: 10;
+        height: 119px;
+    }
+    5%, 100% {
+        x: 224;
+        y: 171;
+        width: 10;
+        height: 0;
+    }
+}
+
+.inner_wall_entrance_2 {
+    animation-name: inner_wall_entrance_2;
+    height: 10;
+    y: 238;
+    x: 228;
+    width: 233px;
+}
+
+@keyframes inner_wall_entrance_2 {
+    0%, 4% {
+        height: 10;
+        y: 238;
+        x: 228;
+        width: 233px;
+    }
+    4.8%, 100% {
+        width: 0;
+    }
+}
+
+.inner_wall_entrance_3 {
+    animation-name: inner_wall_entrance_3;
+    width: 10;
+    y: 218;
+    x: 227.5;
+    height: 23px;
+}
+
+@keyframes inner_wall_entrance_3 {
+    0%, 4.8% {
+        width: 10;
+        y: 218;
+        x: 227.5;
+        height: 23px;
+    }
+    5%, 100% {
+        height: 0px;
+    }
+}
+
+.inner_wall_entrance_4 {
+    animation-name: inner_wall_entrance_4;
+    width: 10;
+    y: 338.6;
+    x: 167.5;
+    height: 121.2px;
+}
+
+.inner_wall_entrance_5 {
+    animation-name: inner_wall_entrance_5;
+    width: 10;
+    y: 338.6;
+    x: 265.5;
+    height: 121.2px;
+}
+
+.inner_wall_entrance_6 {
+    animation-name: inner_wall_entrance_6;
+    width: 10;
+    y: 338.6;
+    x: 364.5;
+    height: 121.2px;
+}
+
+
+@keyframes inner_wall_entrance_4 {
+    0%, 4.4% {
+        height: 121.2px;
+    }
+    4.9%, 100% {
+        height: 0px;
+    }
+}
+
+@keyframes inner_wall_entrance_5 {
+    0%, 4.2% {
+        height: 121.2px;
+    }
+    4.7%, 100% {
+        height: 0px;
+    }
+}
+
+@keyframes inner_wall_entrance_6 {
+    0%, 4% {
+        height: 121.2px;
+    }
+    4.5%, 100% {
+        height: 0px;
+    }
+}
+
+.inner_wall_entrance_7 {
+    animation-name: inner_wall_entrance_7;
+    width: 291px;
+    y: 337;
+    x: 170;
+    height: 2px;
+}
+
+@keyframes inner_wall_entrance_7 {
+    0%, 4.5% {
+        width: 291px;
+    }
+    6%, 100% {
+        width: 0px;
+    }
+}
+
+@mixin scale_keyframe($index, $start, $end) {
+    animation-name: scale_entrance_#{$index};
+    @keyframes scale_entrance_#{$index} {
+        #{0%, $start} {
+            scale: 0;
+            stroke-width: 0;
+        }
+        #{$end, 100%} {
+            scale: 1;
+            stroke-width: 1;
+        }
+    }
+}
+
+.tables {
+    circle {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation-timing-function: cubic-bezier(0.07, 0.19, 0.43, 1.32);
+        transform: scale(1);
+    }
+    .circle1 {
+        @include scale_keyframe(1, 7%, 8%);
+    }
+    .circle2 {
+        @include scale_keyframe(2, 8%, 9%);
+    }
+    .circle3 {
+        @include scale_keyframe(3, 9%, 10%);
+    }
+}
+
+.desks {
+    rect {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation-timing-function: cubic-bezier(0.07, 0.19, 0.43, 1.32);
+        transform: scale(1);
+    }
+    .desk1 {
+        @include scale_keyframe(4, 8%, 9%);
+    }
+    .desk2 {
+        @include scale_keyframe(5, 10%, 11%);
+    }
+    .desk3 {
+        @include scale_keyframe(6, 11%, 12%);
+    }
+}
+
+.boards {
+    rect {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation-timing-function: cubic-bezier(0.07, 0.19, 0.43, 1.32);
+        transform: scale(1);
+    }
+    .desk1 {
+        @include scale_keyframe(4, 8%, 9%);
+    }
+    .desk2 {
+        @include scale_keyframe(5, 10%, 11%);
+    }
+    .desk3 {
+        @include scale_keyframe(6, 11%, 12%);
+    }
+}
+
+.tv {
+    transform: translate(97px, 412px);
+    g {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation-timing-function: cubic-bezier(0.07, 0.19, 0.43, 1.32);
+        transform: scale(1);
+        
+        @include scale_keyframe(7, 11%, 12%);
+    }
+}
+
+.flowers {
+    & > g > g {
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+    .flower1 {
+        transform: translate(56px, 61px);
+        g {
+            @include scale_keyframe(8, 8%, 8.5%);
+        }
+    }
+    .flower2 {
+        transform: translate(427px, 206px);
+        g {
+            @include scale_keyframe(9, 8.5%, 9%);
+        }
+    }
+    .flower3 {
+        transform: translate(63px, 426px);
+        g {
+            @include scale_keyframe(10, 9%, 9.5%);
+        }
+    }
+}
+
+.benches {
+    & > g > g {
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+    .bench1 {
+        transform: translate(89px, 60px);
+        g {
+            @include scale_keyframe(11, 8%, 9%);
+        }
+    }
+    .bench2 {
+        transform: translate(10px, 321px);
+        g {
+            transform: rotate(-90deg);
+            @include scale_keyframe(12, 9%, 10%);
+        }
+    }
+}
+
+.normal-chairs {
+    & > g > g {
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+    .normal-chair1 {
+        transform: translate(57px, 238px);
+        g {
+            @include scale_keyframe(13, 8%, 9%);
+        }
+    }
+    .normal-chair2 {
+        transform: translate(57px, 208px);
+        g {
+            @include scale_keyframe(14, 9%, 10%);
+        }
+    }
+}
+
+.board_entrance {
+    animation-name: board_entrance;
+    x: 225;
+    y: 246;
+    width: 234px;
+    height: 11px;
+}
+
+@keyframes board_entrance {
+    0%, 5% {
+        width: 234px;
+    }
+    6%, 100% {
+        width: 0;
+    }
+}
