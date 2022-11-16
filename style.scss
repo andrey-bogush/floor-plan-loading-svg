@@ -825,6 +825,7 @@
         }
         3%, 93% {
             height: 0;
+            y: 191;
         }
         94% {
             height: 0;
@@ -894,7 +895,7 @@
     }
     
     .inner_wall_entrance_3 {
-        animation-name: inner_wall_entrance_3;
+        animation-name: inner_wal1l_entrance_3;
         width: 10;
         y: 218;
         x: 227.5;
@@ -907,9 +908,14 @@
             y: 218;
             x: 227.5;
             height: 23px;
+            opacity: 1;
         }
         5%, 42% {
+            width: 10;
+            y: 218;
+            x: 227.5;
             height: 0px;
+            opacity: 1;
         }
         43% {
             y: 218;
@@ -1678,6 +1684,7 @@
             transform-box: fill-box;
             transform-origin: center;
             animation-timing-function: cubic-bezier(0.07, 0.19, 0, 1.3);
+            fill: #222222;
         }
         .flower1 {
             transform: translate(56px, 61px);
